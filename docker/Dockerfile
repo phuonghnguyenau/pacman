@@ -2,7 +2,7 @@ FROM registry.access.redhat.com/ubi8/nodejs-16-minimal:1-65
 
 LABEL org.opencontainers.image.authors="Ivan Font (Original) <ifont@redhat.com>, Phuong Nguyen (Modifications) <pnguyen@redhat.com>"
 
-COPY package*.json ./
+ADD . ./
 
 # Install app dependencies
 RUN npm install
