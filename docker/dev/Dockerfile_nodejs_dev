@@ -3,9 +3,9 @@ FROM node:boron
 MAINTAINER Ivan Font <ifont@redhat.com>
 
 # Create app directory and specify volume that will be bind mounted at runtime
-RUN mkdir -p /app
-WORKDIR /app
-VOLUME ["/app"]
+RUN mkdir -p /opt/app-root/src
+WORKDIR /opt/app-root/src
+VOLUME ["/opt/app-root/src"]
 
 # Expose port 8080
 EXPOSE 8080
